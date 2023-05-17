@@ -1,0 +1,1 @@
+use sql for login, jquery for the other shit, and js

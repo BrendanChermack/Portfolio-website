@@ -1,0 +1,48 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color:rgb(27, 27, 27);
+    font-family: 'Noto Sans', sans-serif;
+}
+li, a, button{
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: none;
+    color: #edf0f1;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.44);  
+}
+.navlink{
+    list-style-type: none;
+
+}
+.navlink li{
+    display: inline-block;
+    padding: 10px 25px;
+}
+.navlink li a{
+    transition: all 0.3s ease 0s;
+}
+.navlink li a:hover{
+    color: teal;
+}
+.contact button{
+    padding: 3px 13px;
+    background-color: rgb(1, 224, 224);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.contact button:hover{
+    background-color: rgb(1, 137, 137);
+    transform: scale(1.035);
+    
+}
