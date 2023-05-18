@@ -7,7 +7,6 @@
     
     <script src="./script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    
     <link rel="stylesheet" href="style.css" type="text/css">
 
     <link rel="icon" type="image/icon" href="./icons/code(1).png">
@@ -21,8 +20,8 @@
     <title>Brendan Chermack</title>
 </head>
 <body>
-    
-    <div class="main">
+    <!-- Navbar -->
+    <div class="navbar">
         <img style="border: 2px solid teal; border-radius: 50px" src="icons/guy_coding.png" width="100px" height="100px" alt="logo" > 
         <nav>
             <ul class="navlink">    
@@ -34,19 +33,32 @@
         </nav>
         <a class="contact" href="#"><button>Contact</button></a>
     </div>
-    <div class="about">
-        <h2 style="color: teal">
-            About Me
-        </h2>
-        <h3>
-            Software Developer
-        </h3>
-        <p>
-            Passionate about programming and creation, Brendan is a self-motivated individual with a knack for self-teaching. 
-            He thrive on the exhilarating process of bringing ideas to life through coding. 
-            From making this website, to automating tasks, He loves to see the programs he makes have an actual use. 
-            Driven by his strong work ethic, Brendan consistently strive to surpass his peers, placing himself above them in pursuit of excellence and perfection.
-        </p>
-    </div>
+    <section class="welcome">
+        <div>
+            <h1>
+                Welcome to Brendan's Portfolio
+            </h1>
+        </div>
+    </section>
+    <!-- About me section that also leads from Home button -->
+    <section class="about">
+        <div class="main">
+            <img rel="personalPic" src="./icons/guy_coding.png" alt="Personal Picture">
+            <div class="about-txt">
+                <h2>
+                    About Me
+                </h2>
+                <h3>
+                    Software Developer
+                </h3>
+                <p>
+                    Passionate about programming and creation, I am a self-motivated individual with a knack for self-teaching. 
+                    I thrives on the exhilarating process of bringing ideas to life through coding. 
+                    From making this website, to automating tasks, I love seeing a project I make have an actual use. 
+                    Driven by my strong work ethic, I consistently strive to surpass my peers, placing myself above them in pursuit of excellence and perfection.
+                </p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

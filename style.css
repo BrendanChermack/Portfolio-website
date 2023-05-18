@@ -7,7 +7,7 @@
     font-family: 'Noto Sans', sans-serif;
 }
 html body{
-    
+    background-color:rgb(26, 26, 26);
 }
 li, a, button{
     font-weight: 600;
@@ -15,19 +15,24 @@ li, a, button{
     text-decoration: none;
     color: #edf0f1;
 }
-.main{
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 12.5%;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.44);  
+    margin-bottom: 0;
+    padding-bottom: 0;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);  
 }
 .navlink{
     list-style-type: none;
+    margin-bottom: 0;
+    padding:0;
 }
 .navlink li{
     display: inline-block;
     padding: 10px 25px;
+    margin-bottom: 0px;
 }
 .navlink li a{
     transition: all 0.3s ease 0s;
@@ -47,27 +52,61 @@ li, a, button{
     background-color: rgb(1, 137, 137);
     transform: scale(1.035);   
 }
-.about{
-    padding: 15px 12.5%;
-    margin-top: 25px;
-    background-color:rgb(26, 26, 26);
+
+.welcome{
+    text-align: center;
+    margin-top: 55px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: teal;
+    margin-bottom: 0px;
+    text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
 }
-.about h2{
-    font-size: 22px;
-    margin-bottom: 20px;
+
+.about{
+    width: 100%;
+    padding: 100px;
+}
+.about img{
+    padding-right: 40px;
+    height: auto;
+    width: auto;
+}
+.about about-txt{
+    width: 700px;
+    margin-top: 0;
+    margin-bottom: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: teal
 }
-.about h3{
-    font-size: 22px;
-    margin-bottom: 7px;
-    
-    color: rgb(255, 255, 255)
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
-.about p{
-    text-align: justify;
-    font-size: 17px;
-    line-height: 30px;
+.about-txt h2{
+    color: teal;
+    font-size: 55px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    
+}
+.about-txt h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
     color: #edf0f1;
+}
+.about-txt p{
+    font-size: 17px;
+    line-height: 25px;
+    width: 600px;
+    color: #edf0f1;
+    letter-spacing: 1.3px;
 }

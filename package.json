@@ -2,6 +2,11 @@
   "dependencies": {
     "node.js": "^0.0.1-security",
     "react": "^18.2.0",
-    "sqlite3": "^5.1.6"
+    "sqlite3": "^5.1.6",
+    "three": "^0.152.2",
+    "three.js": "^0.77.1"
+  },
+  "devDependencies": {
+    "vite": "^4.3.7"
   }
 }
