@@ -20,6 +20,8 @@ $(document).ready(function() {
     $("#rHidden").animate({
       opacity: 1,
       right: "0"
-    }, 800); // Adjust the duration (in milliseconds) as needed
+    }, 800).animate({
+      transition: "0.4s" 
+    }) // Adjust the duration (in milliseconds) as needed
   });
   

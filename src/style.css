@@ -53,10 +53,10 @@ li, a, button{
     transform: scale(1.035);   
 }
 
-.welcome{
+.welcome h1{
     text-align: center;
-    margin-top: 55px;
-    font-size: 40px;
+    margin-top: 60px;
+    font-size: 60px;
     text-transform: uppercase;
     color: rgb(1, 213, 213);
     margin-bottom: 0px;
@@ -115,15 +115,21 @@ li, a, button{
     color: #edf0f1;
     letter-spacing: 1.3px;
 }
-
 .projects h2{
     color: rgb(1, 213, 213);
     font-size: 55px;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 75px;
     letter-spacing: 2px;
     text-align: center;
 }
+.project1{
+    margin-bottom: 50px;
+}
+.project2{
+    margin-bottom: 50px;
+}
+
 #lHidden {
     position: relative;
     left: 100%;
