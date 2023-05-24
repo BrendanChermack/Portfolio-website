@@ -4,10 +4,16 @@
     padding: 0;
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth;
 }
 html body{
     background-color:rgb(38, 38, 38);
+    scroll-behavior: smooth;
 }
+
 li, a, button{
     font-weight: 600;
     font-size: 30px;
@@ -53,10 +59,10 @@ li, a, button{
     transform: scale(1.035);   
 }
 
-.welcome{
+.welcome h1{
     text-align: center;
     margin-top: 55px;
-    font-size: 40px;
+    font-size: 65px;
     text-transform: uppercase;
     color: rgb(1, 213, 213);
     margin-bottom: 0px;
@@ -115,14 +121,22 @@ li, a, button{
     color: #edf0f1;
     letter-spacing: 1.3px;
 }
-
+.projects{
+    color: #edf0f1;
+}
 .projects h2{
     color: rgb(1, 213, 213);
     font-size: 55px;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
     letter-spacing: 2px;
     text-align: center;
+}
+.project1{
+    margin-bottom: 50px;
+}
+.project2{
+    margin-bottom: 50px;
 }
 #lHidden {
     position: relative;
@@ -136,9 +150,15 @@ li, a, button{
     opacity: 0;
     text-transform: blur(150);
   }
+  .edu h2{
+    color: rgb(1, 213, 213);
+    font-size: 55px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
 .social-medias{
-    /*display: grid;
-    grid-template-columns: 1fr 99fr;*/
     padding: 30px 12.5%;
     margin-left: 10px;
     height: 100%;

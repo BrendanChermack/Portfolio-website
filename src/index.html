@@ -7,7 +7,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="./script.js"></script>
-   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
     <link rel="stylesheet" href="style.css" type="text/css">
 
     <link rel="icon" type="image/icon" href="../icons/code(1).png">
@@ -17,6 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 
     <title>Brendan Chermack</title>
@@ -29,12 +33,12 @@
         <nav>
             <ul class="navlink">    
                 <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="../.pictures/resume.pdf" target="_blank">Resume</a></li>
-                <li><a href="education.html">Education</a></li>
+                <li><a href="#education">Education</a></li>
             </ul>
         </nav>
-        <a class="contact" href="#"><button>Contact</button></a>
+        <a class="contact" href="#contact"><button>Contact</button></a>
     </div>
     <section class="welcome">
         <div>
@@ -62,8 +66,8 @@
                     <br> 
                     <br>
                     I am currently a sophomore student at Saint Cloud State University, where I am pursuing my education in the field of Computer Science. 
-                    While I take my education seriously, I strive to put myself ahead my peers by consistently challenging myself by 
-                    doing difficult projects and tasks unrelated to my academic classes.
+                    While I take my education seriously, I strive to challenge myself by 
+                    doing difficult projects and tasks unrelated to my academic classes to further my knowledge.
                     <br>
                     <br>
                     In my free time I like to working out, hike trails, snowboard and spend time with my family. 
@@ -73,12 +77,79 @@
     </section>
     <!-- Project section -->
     <section class="projects">
-        <h2>
+        <h2 id="projects">
             Projects
         </h2>
+        <div class="project2">
+            <div class="container" >
+                <div class="row justify-content-around align-items-right font" style="font-size: 20px;">
+                    
+                <div class="col-md-6 text-left" font-size="300px">
+                    <h2 style="margin-bottom: 15px; font-size: 40px">
+                        Power Selling Program
+                    </h2>
+                    <p font-size="300px" letter-spacing="1px">I participated in a hackathon where I developed software to sell surplus power stored in batteries back to the power grid, effectively utilizing unused solar energy. I solved the issue of unacknowledged power consumption by designing and implementing an object-oriented software solution capable of analyzing extensive datasets. To enhance collaboration and project management, I created a detailed README.md file outlining the project's goals, approach, and feasibility. This initiative is expected to reduce renewable power wastage by approximately 25%, enabling greater solar power utilization and generating profits for both customers and power companies.</p>
+                </div>
+                    <div class="col-md-6 ">
+                        <a href="https://github.com/CloudOverflow2023/CloudOverflow/" target="_blank">
+                            <img src="https://camo.githubusercontent.com/702b16adae7b3c031137ac440536580b7cb44a54578d8c01bc7cbaf67a50f4ba/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f313039383737373139383435353936333737392f313039393432363130303534393030353339322f475549566964656f332e474946" alt="Your Image" width="auto" height="250px" style="margin-top: 90px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project1">
+            <div class="container">
+                <div class="row justify-content-around align-items-right font" style="font-size: 20px">
+                    
+                <div class="col-md-6 text-left">
+                    <h2 style="margin-bottom: 15px; font-size: 40px">
+                        twitter bot
+                    </h2>
+                    <p font-size="300px" letter-spacing="1px">The Python-based Twitter bot I developed enables automated tweeting, retweeting, and direct messaging functionalities. To ensure comprehensive functionality, I thoroughly studied the extensive documentation provided by Twitter, allowing me to understand the API's capabilities and limitations. By implementing natural language processing techniques, the bot can analyze tweets and generate appropriate responses. To prevent redundancy and avoid overwhelming Twitter's API, the bot automatically maintains a JSON file that tracks the IDs of tweets it has already interacted with, ensuring it does not repeat actions. This efficient approach optimizes the bot's performance and enhances its overall functionality.</p>
+                </div>
+                    <div class="col-md-6 " >
+                            <a href="https://github.com/BrendanChermack/TwitterBot" target="_blank">
+                                <img src="../.pictures/twitter.png" alt="Your Image" width="auto" height="350px" style="margin-top: 80px; margin-left: 100px;">
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project3">
+            <div class="container">
+                <div class="row justify-content-around align-items-right font" style="font-size: 20px;">
+                    <div class="col-md-6 text-left" font-size="300px">
+                        <h2 style="margin-bottom: 15px; font-size: 40px">
+                            Zombie Survival Game
+                        </h2>
+                        <p font-size="300px" letter-spacing="1px">
+                            I developed a zombie survival game using Unreal Engine 5 (UE5) for a game jam. 
+                            The game features immersive gameplay and challenges players to survive against hordes of zombies. 
+                            I utilized the advanced features and capabilities of UE5 to create stunning visuals and realistic physics. I implemented a working UI for the typical first person shooters' elements (i.g. Health).
+                            The game jam provided a limited time frame to complete the project, and I successfully delivered a fully playable and engaging 
+                            experience within that timeframe.</p>
+                    </div>
+                        <div class="col-md-6 ">
+                            <a href="https://github.com/BrendanChermack/ZombieSurvivalGGJ2023" target="_blank">
+                                <img src="../.pictures/image_2023-02-05_164217526.png" alt="Your Image" width="auto" height="350px" style="margin-top: 70px; margin-left: 100px;">
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Education Section-->
+    <section  class="edu" style="margin-top: 100px;">
+        <h2 id="education">
+            Education
+        </h2>
+    </section>
+    <!--Contact Section-->
+    <section id="contact">
 
     </section>
-    
     <!-- Footer -->
     <section class="footer">
         <div class="social-medias">
