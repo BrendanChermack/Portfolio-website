@@ -4,16 +4,13 @@
     padding: 0;
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
-    scroll-behavior: smooth;
 }
 html{
     scroll-behavior: smooth;
 }
 html body{
     background-color:rgb(38, 38, 38);
-    scroll-behavior: smooth;
 }
-
 li, a, button{
     font-weight: 600;
     font-size: 30px;
@@ -142,15 +139,17 @@ li, a, button{
     position: relative;
     left: 100%;
     opacity: 0;
-    text-transform: blur(150);
+    
   }
 #rHidden {
     position: relative;
     right: 100%;
     opacity: 0;
-    text-transform: blur(150);
   }
-  .edu h2{
+.edu{
+    
+}
+.edu h2{
     color: rgb(1, 213, 213);
     font-size: 55px;
     text-transform: uppercase;

@@ -1,2 +1,2 @@
-dont use className for your shit|
+dont use className
 <div class=""></div>
