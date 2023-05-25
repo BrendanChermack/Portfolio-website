@@ -138,7 +138,7 @@ li, a, button{
     margin-bottom: 50px;
 }
 .project3{
-    margin-bottom: 75px;
+    margin-bottom: 200px;
 }
 #lHidden {
     position: relative;
@@ -155,12 +155,13 @@ li, a, button{
     display: flex;
     justify-content: center;
     align-items: center; 
+    margin-bottom: 100px;
 }
 .contactform h2{
         color: rgb(1, 213, 213);
         font-size: 55px;
         text-transform: uppercase;
-        margin-bottom: 65px;
+        margin-bottom: 70px;
         letter-spacing: 2px;
         text-align: center;
 }
@@ -185,25 +186,24 @@ li, a, button{
 
 }
 form button{
-    display: flex;
+    display: grid;
     background-color: rgb(1, 213, 213);
-    justify-content: center;
+    grid-template-columns: right;
     cursor: pointer;
     max-width: 120px;
     width: 20px auto 0;
     border-radius: 15px;
+    margin-top: 10px;
 }
 form button:hover{
     background-color: teal;
 }
-
 
 .social-medias{
     background-color:rgb(27, 27, 27);
     display: flex;
     justify-content: center;
     padding: 30px 12.5%;
-    margin-left: 10px;
     height: 100%;
     width: 100%;
 }
