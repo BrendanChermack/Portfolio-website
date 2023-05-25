@@ -171,13 +171,14 @@
     <script>
         function sendEmail(){
             Email.send({
-                    Host : "smtp.elasticemail.com",
-                    Username : "chermackbrendan@gmail.com",
-                    Password : "7D4B0A2313AEDABEA02EF8D7020CDD5ED03C",
+                    SecureToken: "b98da43f-b645-4912-ba2b-62907f3c7626",
                     To : 'chermackbrendan@gmail.com',
                     From : document.getElementById("email").value,
                     Subject : "sent from portfolio",
-                    Body : document.getElementById("fName").value + " " + document.getElementById("lName").value + '<br>' +  document.getElementById("email")+ '<br>' +document.getElementById("message").value
+                    Body : document.getElementById("fName").value + " " + 
+                        document.getElementById("lName").value + '<br>'+ 
+                        document.getElementById("email").value + '<br>' + 
+                        document.getElementById("message").value
                 }).then(
               message => alert(message)
             );
