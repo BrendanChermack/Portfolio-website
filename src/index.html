@@ -172,8 +172,8 @@
         function sendEmail(){
             Email.send({
                     SecureToken: "b98da43f-b645-4912-ba2b-62907f3c7626",
+                    From : 'chermackbrendan@gmail.com',                   
                     To : 'chermackbrendan@gmail.com',
-                    From : document.getElementById("email").value,
                     Subject : "sent from portfolio",
                     Body : document.getElementById("fName").value + " " + 
                         document.getElementById("lName").value + '<br>'+ 
