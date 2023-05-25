@@ -14,7 +14,6 @@ $(document).ready(function() {
     $("#lHidden").animate({
         opacity: 1,
         left: "0",
-        filter: "blur(0px)"
     }, 800); 
     $("#rHidden")
         .animate({

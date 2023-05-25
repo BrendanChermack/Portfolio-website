@@ -36,11 +36,11 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="../pictures/resume.pdf" target="_blank">Resume</a></li>
-                <li><a href="#education">Education</a></li>
             </ul>
         </nav>
         <a class="contact" href="#contact"><button>Contact</button></a>
     </div>
+    
     <section class="welcome">
         <div>
             <h1>
@@ -83,13 +83,13 @@
         </h2>
         <div class="project2">
             <div class="container" >
-                <div class="row justify-content-around align-items-right font" style="font-size: 20px;">
+                <div class="row justify-content-around align-items-right" style="font-size: 20px;">
                     
-                <div class="col-md-6 text-left" font-size="300px">
+                <div class="col-md-6 text-left" >
                     <h2 style="margin-bottom: 15px; font-size: 40px">
                         Power Selling Program
                     </h2>
-                    <p font-size="300px" letter-spacing="1px">I participated in a hackathon where I developed software to sell surplus power stored in batteries back to the power grid, effectively utilizing unused solar energy. I solved the issue of unacknowledged power consumption by designing and implementing an object-oriented software solution capable of analyzing extensive datasets. To enhance collaboration and project management, I created a detailed README.md file outlining the project's goals, approach, and feasibility. This initiative is expected to reduce renewable power wastage by approximately 25%, enabling greater solar power utilization and generating profits for both customers and power companies.</p>
+                    <p letter-spacing="1px">I participated in a hackathon where I developed software to sell surplus power stored in batteries back to the power grid, effectively utilizing unused solar energy. I solved the issue of unacknowledged power consumption by designing and implementing an object-oriented software solution capable of analyzing extensive datasets. To enhance collaboration and project management, I created a detailed README.md file outlining the project's goals, approach, and feasibility. This initiative is expected to reduce renewable power wastage by approximately 25%, enabling greater solar power utilization and generating profits for both customers and power companies.</p>
                 </div>
                     <div class="col-md-6 ">
                         <a href="https://github.com/CloudOverflow2023/CloudOverflow/" target="_blank">
@@ -107,7 +107,7 @@
                     <h2 style="margin-bottom: 15px; font-size: 40px">
                         twitter bot
                     </h2>
-                    <p font-size="300px" letter-spacing="1px">The Python-based Twitter bot I developed enables automated tweeting, retweeting, and direct messaging functionalities. To ensure comprehensive functionality, I thoroughly studied the extensive documentation provided by Twitter, allowing me to understand the API's capabilities and limitations. By implementing natural language processing techniques, the bot can analyze tweets and generate appropriate responses. To prevent redundancy and avoid overwhelming Twitter's API, the bot automatically maintains a JSON file that tracks the IDs of tweets it has already interacted with, ensuring it does not repeat actions. This efficient approach optimizes the bot's performance and enhances its overall functionality.</p>
+                    <p  letter-spacing="1px">The Python-based Twitter bot I developed enables automated tweeting, retweeting, and direct messaging functionalities. To ensure comprehensive functionality, I thoroughly studied the extensive documentation provided by Twitter, allowing me to understand the API's capabilities and limitations. By implementing natural language processing techniques, the bot can analyze tweets and generate appropriate responses. To prevent redundancy and avoid overwhelming Twitter's API, the bot automatically maintains a JSON file that tracks the IDs of tweets it has already interacted with, ensuring it does not repeat actions. This efficient approach optimizes the bot's performance and enhances its overall functionality.</p>
                 </div>
                     <div class="col-md-6 " >
                             <a href="https://github.com/BrendanChermack/TwitterBot" target="_blank">
@@ -125,7 +125,7 @@
                         <h2 style="margin-bottom: 15px; font-size: 40px">
                             Zombie Survival Game
                         </h2>
-                        <p font-size="300px" letter-spacing="1px">
+                        <p  letter-spacing="1px">
                             I developed a zombie survival game using Unreal Engine 5 (UE5) for a game jam. 
                             The game features immersive gameplay and challenges players to survive against hordes of zombies. 
                             I utilized the advanced features and capabilities of UE5 to create stunning visuals and realistic physics. I implemented a working UI for the typical first person shooters' elements (i.g. Health).
@@ -141,15 +141,20 @@
             </div>
         </div>
     </section>
-    <!--Education Section-->
-    <section  class="edu" style="margin-top: 100px;">
-        <h2 id="education">
-            Education
-        </h2>
-    </section>
     <!--Contact Section-->
     <section id="contact">
-
+        <div class="contactform">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h2>
+                    Contact Me
+                </h2>
+                <input type="text" id="fName" placeholder="First Name" required>
+                <input type="text" id="lName" placeholder="Last Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <textarea id="message" placeholder="Message" row=4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </section>
     <!-- Footer -->
     <section class="footer">
@@ -162,5 +167,21 @@
             </a>
         </div>
     </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "chermackbrendan@gmail.com",
+                    Password : "7D4B0A2313AEDABEA02EF8D7020CDD5ED03C",
+                    To : 'chermackbrendan@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "sent from portfolio",
+                    Body : document.getElementById("fName").value + " " + document.getElementById("lName").value + '<br>' +  document.getElementById("email")+ '<br>' +document.getElementById("message").value
+                }).then(
+              message => alert(message)
+            );
+        }
+    </script>
 </body>
 </html>
