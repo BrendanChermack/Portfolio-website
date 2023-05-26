@@ -11,6 +11,9 @@ html{
 html body{
     background-color:rgb(38, 38, 38);
 }
+
+/* navbar */
+
 li, a, button{
     font-weight: 600;
     font-size: 30px;
@@ -56,6 +59,8 @@ li, a, button{
     transform: scale(1.035);   
 }
 
+/* welcome text */
+
 .welcome h1{
     text-align: center;
     margin-top: 55px;
@@ -65,6 +70,9 @@ li, a, button{
     margin-bottom: 75px;
     text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
 }
+
+
+/* about section */
 
 .about{
     width: 100%;
@@ -120,6 +128,8 @@ li, a, button{
     letter-spacing: 1.3px;
 }
 
+/* project section with boot strap */
+
 .projects{
     color: #edf0f1;
 }
@@ -151,6 +161,9 @@ li, a, button{
     right: 100%;
     opacity: 0;
   }
+
+/* contact section */
+
 .contactform{
     display: flex;
     justify-content: center;
@@ -165,7 +178,6 @@ li, a, button{
         letter-spacing: 2px;
         text-align: center;
 }
-
 .contactform form{
     background-color: rgb(58, 58, 58);
     display: flex;
@@ -182,8 +194,6 @@ li, a, button{
     outline: none;
     background-color: rgb(255, 255, 255);
     font-size: 16px;
-    
-
 }
 .contactform textarea{
     padding-bottom: 100px;
@@ -200,11 +210,12 @@ form button:hover{
     background-color: teal;
 }
 
+
+/* footer section */
 .social-medias{
     background-color:rgb(27, 27, 27);
     display: flex;
     justify-content: center;
-    
     padding: 30px 12.5%;
     height: 100%;
     width: 100%;
