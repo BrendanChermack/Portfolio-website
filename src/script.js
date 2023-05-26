@@ -14,11 +14,13 @@ $(document).ready(function() {
     $("#lHidden").animate({
         opacity: 1,
         left: "0",
+        blur: "10%",
     }, 800); 
     $("#rHidden")
         .animate({
             opacity: 1,
-            right: "0"
+            right: "0",
+            blur: "10%",
         }, 800)
         .animate({
             transition: ".4s"
