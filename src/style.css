@@ -59,11 +59,11 @@ li, a, button{
 
 .welcome h1{
     text-align: center;
-    margin-top: 150px;
+    margin-top: 12vh;
     font-size: 65px;
     text-transform: uppercase;
     color: rgb(1, 213, 213);
-    margin-bottom: 100px;
+    margin-bottom: 12vh;
     text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -90,13 +90,10 @@ li, a, button{
     letter-spacing: 2px;
     text-transform: uppercase;
     color: teal;
-    flex-wrap: wrap;
 }
 .main{
-    width: 1130px;
-    max-width: 95%;
+    width: fit-content;
     margin: auto;
-    
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -127,8 +124,8 @@ li, a, button{
 /* project section with boot strap */
 
 .projects{
+    margin-top: 12vh;
     color: #edf0f1;
-    
 }
 .projects img{
     transition: all 0.4s ease 0s; 
